@@ -2,17 +2,17 @@ package com.mycompany.learnjavaspringboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 import com.mycompany.learnjavaspringboot.game.GameRunner;
-import com.mycompany.learnjavaspringboot.game.MarioGame;
 
 @SpringBootApplication
 public class LearnJavaSpringbootApplication {
 
 	public static void main(String[] args) {
-		// SpringApplication.run(LearnJavaSpringbootApplication.class, args);
-		MarioGame game = new MarioGame();
-		GameRunner runner = new GameRunner(game);
+		ConfigurableApplicationContext context = SpringApplication.run(LearnJavaSpringbootApplication.class, args);
+
+		GameRunner runner = context.getBean(GameRunner.class);
 
 		runner.run();
 	}
