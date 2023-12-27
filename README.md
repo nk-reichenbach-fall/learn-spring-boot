@@ -9,3 +9,5 @@ Each Commit in this branch resembles each topic
 
 ### Understanding Spring Boot
 - [Basic REST API](https://github.com/nk-reichenbach-fall/learn-spring-boot/commit/a77abd428c25ecf4cea97ee2a3d10f0c2da031a3)
+
+- [Actuator](https://github.com/nk-reichenbach-fall/learn-spring-boot/commit/d5caaaf47b1c689f39e68d9d47bbb8e645747e5d)
