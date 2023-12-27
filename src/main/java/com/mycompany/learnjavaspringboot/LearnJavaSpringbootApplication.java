@@ -10,11 +10,10 @@ import com.mycompany.learnjavaspringboot.game.GameRunner;
 public class LearnJavaSpringbootApplication {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext context = SpringApplication.run(LearnJavaSpringbootApplication.class, args);
-
-		GameRunner runner = context.getBean(GameRunner.class);
-
-		runner.run();
-	}
+		SpringApplication.run(LearnJavaSpringbootApplication.class, args);
+		// ConfigurableApplicationContext context = SpringApplication.run(LearnJavaSpringbootApplication.class, args);
+		// GameRunner runner = context.getBean(GameRunner.class);
+		// runner.run();
+	}	
 
 }
