@@ -25,7 +25,7 @@ public class UserDaoService {
 
     public User getUserDetails(Integer userId) {
         Predicate<? super User> predicate = user -> user.getId().equals(userId);
-        return users.stream().filter(predicate).findFirst().get();
+        return users.stream().filter(predicate).findFirst().orElse(null);
     }
 
     public User addUser(User user) {
