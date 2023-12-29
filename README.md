@@ -30,3 +30,5 @@ Each link corresponds to its respective Commits
 #### User
 
 - [Get User and Post User](https://github.com/nk-reichenbach-fall/learn-spring-boot/commit/f2cfcf2bb28934a8baba90f1676075268a916394)
+
+- [Custom Exception](https://github.com/nk-reichenbach-fall/learn-spring-boot/commit/197415f738362c506895f2fc63cdfcd74e47f3ac)
