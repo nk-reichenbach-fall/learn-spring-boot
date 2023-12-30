@@ -3,6 +3,7 @@
 In this repo is the basic syntax and methods used in Spring.
 
 Each link corresponds to its respective Commits
+
 <hr>
 
 ## <u>Topics</u>
@@ -32,3 +33,5 @@ Each link corresponds to its respective Commits
 - [Get User and Post User](https://github.com/nk-reichenbach-fall/learn-spring-boot/commit/f2cfcf2bb28934a8baba90f1676075268a916394)
 
 - [Custom Exception](https://github.com/nk-reichenbach-fall/learn-spring-boot/commit/e65718823a8e79132eaf54e6d276f3d5ec9f3e86)
+
+- [Validate Input](https://github.com/nk-reichenbach-fall/learn-spring-boot/commit/361a97d1f218e5a9efd8d52b82aac866e8bf00c9)
