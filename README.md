@@ -35,3 +35,5 @@ Each link corresponds to its respective Commits
 - [Custom Exception](https://github.com/nk-reichenbach-fall/learn-spring-boot/commit/e65718823a8e79132eaf54e6d276f3d5ec9f3e86)
 
 - [Validate Input](https://github.com/nk-reichenbach-fall/learn-spring-boot/commit/361a97d1f218e5a9efd8d52b82aac866e8bf00c9)
+
+- [Swagger and Content Negotiation](https://github.com/nk-reichenbach-fall/learn-spring-boot/commit/189ac45cd9eefb62ea64d519926f9d7ea79877a8)

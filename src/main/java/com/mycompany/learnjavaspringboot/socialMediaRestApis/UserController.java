@@ -8,6 +8,10 @@ import jakarta.validation.Valid;
 import java.net.URI;
 import java.util.List;
 
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
+
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,12 +34,18 @@ public class UserController {
     }
 
     @GetMapping("/users/{userId}")
-    public User getUserDetails(@PathVariable Integer userId) {
+    public EntityModel<User> getUserDetails(@PathVariable Integer userId) {
         User user = userDaoService.getUserDetails(userId);
         if (user == null) {
             throw new UserNotFoundException("Id:" + userId);
         }
-        return user;
+
+        EntityModel<User> entityModel = EntityModel.of(user);
+
+        WebMvcLinkBuilder link = linkTo(methodOn(this.getClass()).getAllUsers());
+        entityModel.add(link.withRel("all-users"));
+
+        return entityModel;
     }
 
     @PostMapping("/users")

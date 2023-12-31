@@ -35,4 +35,49 @@ public class helloWorldController {
 
         return messageSource.getMessage("good.morning.message", null, "Default Message", localeContext);
     }
+
+    // Versioning with path
+    @GetMapping("/v1/hello-world-version")
+    public String greetTheUserV1() {
+        return "Hello World v1";
+    }
+
+    @GetMapping("/v2/hello-world-version")
+    public String greetTheUserV2() {
+        return "Hello World v2";
+    }
+
+    // Versioning with params
+    @GetMapping(path = "/hello-world-version", params = "version=1")
+    public String greetTheUserWithParamsV1() {
+        return "Hello World V1";
+    }
+
+    @GetMapping(path = "/hello-world-version", params = "version=2")
+    public String greetTheUserWithParamsV2() {
+        return "Hello World V2";
+    }
+
+    // Versioning with headers
+    @GetMapping(path = "/hello-world-version", headers = "X-API-VERSION=1")
+    public String greetTheUserWithHeadersV1() {
+        return "Hello World V1";
+    }
+
+    @GetMapping(path = "/hello-world-version", headers = "X-API-VERSION=2")
+    public String greetTheUserWithHeadersV2() {
+        return "Hello World V2";
+    }
+
+    // Versioning with application type
+    @GetMapping(path = "/hello-world-version", produces = "application/vnd.company.app-v1+json")
+    public String greetTheUserWithApplicationTypeV1() {
+        return "Hello World V1";
+    }
+
+    @GetMapping(path = "/hello-world-version", produces = "application/vnd.company.app-v2+json")
+    public String greetTheUserWithApplicationTypeV2() {
+        return "Hello World V2";
+    }
+
 }
