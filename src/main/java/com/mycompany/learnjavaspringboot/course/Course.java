@@ -1,13 +1,12 @@
 package com.mycompany.learnjavaspringboot.course;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonFilter;
 
+@JsonFilter("courseFilter")
 public class Course {
 
     private long id;
     private String courseName;
-
-    @JsonIgnore
     private String courseCompany;
 
     public Course(long id, String courseName, String courseCompany) {
@@ -33,5 +32,4 @@ public class Course {
         return "Course [id=" + id + ", courseName=" + courseName + ", courseCompany=" + courseCompany + "]";
     }
 
-    
 }

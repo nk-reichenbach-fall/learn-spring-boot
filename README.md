@@ -28,7 +28,7 @@ Each link corresponds to its respective Commits
 
 - [Hello World](https://github.com/nk-reichenbach-fall/learn-spring-boot/commit/230060e9a35c962c987d8b5f1bcf4eaf187a7b68)
 
-#### User
+#### User - Without JPA
 
 - [Get User and Post User](https://github.com/nk-reichenbach-fall/learn-spring-boot/commit/f2cfcf2bb28934a8baba90f1676075268a916394)
 
@@ -39,3 +39,5 @@ Each link corresponds to its respective Commits
 - [Swagger and Content Negotiation](https://github.com/nk-reichenbach-fall/learn-spring-boot/commit/189ac45cd9eefb62ea64d519926f9d7ea79877a8)
 
 - [Versioning and HATEOAS](https://github.com/nk-reichenbach-fall/learn-spring-boot/commit/adc98d3181908b8cb44282a23c0c237d14551508)
+
+- [Static Filtering](https://github.com/nk-reichenbach-fall/learn-spring-boot/commit/07a75b4ebb420b118f54052662211ea291bfb2c8)
